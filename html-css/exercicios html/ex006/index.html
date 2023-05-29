@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+        <h2>Codigo-fonte / Pre-formatação.</h2>
+        <!-- A tag code melhora a fonte e o espaçamento das letras para melhor visualização, serve muito bem para facilitar ver os codigos de programas-->
+            <p>O comando 
+                <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+        <!-- A tag pre obriga ao navegador mostrar exatamente como foi digitado no codigo, incluindo espaços, tabulações.-->
+        <!-- Uma maneira rapida de recuar as tabulações é selecionando tudo e apertando shitf+tab, e se quiser adicionar tabulações em varias linhas o mesmo acontece só com o tab.-->    
+        <!-- Posso mesclar tags tambem, dando o resultado esperado-->
+        <pre>
+            <code>
+    num = int(input('Digite um numero'))
+    if num % 2 ==0:
+        print(f'O numero {num} é PAR')
+    else:
+        print(f'O numero{num} é IMPAR')
+    print('Fim do programa')
+            </code>
+        </pre>
+        <h2>Citações simples</h2>
+            <p>Como diria o pai de um amigo: <q>o computador é um burro muito rapido</q></p>
+        <!-- Usar a tag q quando for uma citação, e nao simplesmente colocar uma aspas-->
+        <h2>Citações completas</h2>
+            <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+       
+            <blockquote cite="">
+            A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+            </blockquote>
+         <!-- A tag blockquote é usada para citações mais completas,usando o parametro cite, coloca-se o link de onde foi retirada essa citação, nao vai acontecer nada visualmente, mas o navegador consegue entender que a citação foi retirada do link.-->
+        
+        <h2>Abreviações</h2>
+            <p>Estou estudando <abbr title="HyperText Markup Language ">HTML</abbr> e <abbr title="Cascading Style Sheets ">CSS</abbr>. Estou adorando!</p>
+        <!-- A tag abbr serve para mostrar o significado de uma sigla passando o mouse em cima, exibindo em uma janela sub o mouse.-->
+       
+        <h2>Texto invertido</h2>
+            <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+         <!--O proprio professor disse ser uma tag inutil, mas n custa nada aprender, vai que eu preciso algum dia. Quando usar a tag nas "" definir se vai ser left to right(ltr)ou vise-versa.-->
+</body
+</html>
